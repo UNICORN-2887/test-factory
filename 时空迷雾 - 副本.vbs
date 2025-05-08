@@ -9,7 +9,7 @@ StopHotkeyMod=0
 RunOnce=1
 EnableWindow=
 MacroID=4e05a01d-59e7-49de-a725-d5dc3557c47a
-Description=Ê±¿ÕÃÔÎí
+Description=æ—¶ç©ºè¿·é›¾
 Enable=1
 AutoRun=0
 [Repeat]
@@ -27,10 +27,10 @@ UEsDBBQAAgAIADRifFokdDRn3S8AAAgCAwAJABEAVUlQYWNrYWdlVVQNAAdmk+ZnZpPmZ2aT5mfsXQd8
 
 
 [Script]
-Global HD1,HD2,HD3//¶¨ÒåÈ«¾Ö¾ä±ú
+Global HD1,HD2,HD3//å®šä¹‰å…¨å±€å¥æŸ„
 Sub Handle
     Dim Hwnd, HwndEx1, HwndEx2
-    Hwnd = Plugin.Window.Find("Qt5156QWindowIcon", "MuMuÄ£ÄâÆ÷12")
+    Hwnd = Plugin.Window.Find("Qt5156QWindowIcon", "MuMuæ¨¡æ‹Ÿå™¨12")
     HD1 = Hwnd
     HwndEx1 = Plugin.Window.FindEx(Hwnd, 0, "Qt5156QWindowIcon", "MuMuPlayer")
     HD2 = HwndEx1
@@ -42,7 +42,7 @@ Sub Handle
     //	MsgBox HD1
     //	MsgBox HD2
     //	MsgBox HD3
-    //¸Ä±ä´°¿Ú´óĞ¡Îª(1920, 1080)
+    //æ”¹å˜çª—å£å¤§å°ä¸º(1920, 1080)
 End Sub
 Sub HP
     Call Plugin.Window.Size(HD1, 2560, 1440)
@@ -50,7 +50,7 @@ End Sub
 //671 561
 Call Handle
 Call HP
-XYs8 = Plugin.Bkgnd.FindPic(HD1, 1811, 1234, 1856, 1269, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ÃÔÎí-ÎŞ´ÎÊı1.bmp", 0, 0.6)//³öÏÖ0
+XYs8 = Plugin.Bkgnd.FindPic(HD1, 1811, 1234, 1856, 1269, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\è¿·é›¾-æ— æ¬¡æ•°1.bmp", 0, 0.6)//å‡ºç°0
 		iZBs8 = InStr(XYs8, "|")
 		Xs8 = CLng(Left(XYs8, iZBs8 - 1))
 		Ys8 = CLng(Right(XYs8, Len(XYs8) - iZBs8))
@@ -60,23 +60,23 @@ XYs8 = Plugin.Bkgnd.FindPic(HD1, 1811, 1234, 1856, 1269, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ÃÔ
 ExitScript
 
 ExitScript
-call ĞÄÔ¸ÈÎÎñËøËÀ
+call å¿ƒæ„¿ä»»åŠ¡é”æ­»
 ExitScript
-Call »¬¶¯(0, 900, 500, 200, 500, 1000)//ÓÒ»¬
-Call »¬¶¯(0, 200, 500, 900, 500, 1000)//×ó»¬
-Call »¬¶¯(0, 500, 600, 500, 300, 1000)//ÏÂ»¬
+Call æ»‘åŠ¨(0, 900, 500, 200, 500, 1000)//å³æ»‘
+Call æ»‘åŠ¨(0, 200, 500, 900, 500, 1000)//å·¦æ»‘
+Call æ»‘åŠ¨(0, 500, 600, 500, 300, 1000)//ä¸‹æ»‘
 //Call Module(1)
 ExitScript 
 Event Form1.test.Click
 Call Handle
 Call HP
-Call Ê±¿ÕÃÔÎíÕ½¶·
+Call æ—¶ç©ºè¿·é›¾æˆ˜æ–—
 End Event
 
-Sub ĞÄÔ¸ÈÎÎñËøËÀ
+Sub å¿ƒæ„¿ä»»åŠ¡é”æ­»
 Do
 	Do
-	XY = Plugin.Bkgnd.FindPic(HD1, 600, 567, 1049, 767, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ĞÄÔ¸ÈÎÎñËøËÀ.bmp", 0, 0.9)
+	XY = Plugin.Bkgnd.FindPic(HD1, 600, 567, 1049, 767, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\å¿ƒæ„¿ä»»åŠ¡é”æ­».bmp", 0, 0.9)
 	iZB = InStr(XY, "|")
 	X = CLng(Left(XY, iZB - 1))
 	Y = CLng(Right(XY, Len(XY) - iZB))
@@ -86,7 +86,7 @@ Do
 	PauseThread Main
 	
 	Delay 1000
-	Call Plugin.Bkgnd.LeftClick(HD2, 727, 715)//µã»÷È¡Ïû
+	Call Plugin.Bkgnd.LeftClick(HD2, 727, 715)//ç‚¹å‡»å–æ¶ˆ
 	Delay 1000
 	
 	ContinueThread Main
@@ -119,57 +119,57 @@ Event Form1.Button2.Click
 Call Handle
 Call HP
 //ExitScript
-call Ê±¿ÕÃÔÎí
+call æ—¶ç©ºè¿·é›¾
 
 ExitScript
 End Event
 
-Sub Ê±¿ÕÃÔÎí
-	Dim dft//¼ÇÂ¼ÄÑ¶È
+Sub æ—¶ç©ºè¿·é›¾
+	Dim dft//è®°å½•éš¾åº¦
 	dft = 0
 	
 	Rem Redo
 	
 	Do
-	bXY9 = Plugin.Bkgnd.FindColorEx(HD1, 1611, 230, 1623, 244, "FBFFA2", 0, 0.9)//¼ì²âÅ·°Ø¼ÓºÅ
+	bXY9 = Plugin.Bkgnd.FindColorEx(HD1, 1611, 230, 1623, 244, "FBFFA2", 0, 0.9)//æ£€æµ‹æ¬§æŸåŠ å·
 	bZB9 = InStr(bXY9, "|")
 	//TracePrint "looping"
 	bX9 = Clng(Left(bXY9, bZB9 - 1)) : bY9 = Clng(Right(bXY9, Len(bXY9) - bZB9))
-	Loop Until bX9 <> - 1 //È·ÈÏ·µ»Ø¶¼ÊĞ
+	Loop Until bX9 <> - 1 //ç¡®è®¤è¿”å›éƒ½å¸‚
 	
 	Delay 1000
 	//MsgBox "in"
 	//Delay 1000
-	Call Plugin.Bkgnd.LeftClick(HD2, 1585, 978)//µã»÷µØÍ¼
+	Call Plugin.Bkgnd.LeftClick(HD2, 1585, 978)//ç‚¹å‡»åœ°å›¾
 	Delay 3000
 	Do
-	XYp = Plugin.Bkgnd.FindColorEx(HD1, 150, 572, 159, 584, "FEFFBA", 0, 0.9)//²é¿´ÊÇ·ñ½øÀ´
+	XYp = Plugin.Bkgnd.FindColorEx(HD1, 150, 572, 159, 584, "FEFFBA", 0, 0.9)//æŸ¥çœ‹æ˜¯å¦è¿›æ¥
 	ZBp = InStr(XYp, "|")
 	Xp = Clng(Left(XYp, ZBp - 1)): Yp = Clng(Right(XYp, Len(XYp) - ZBp))
 	Loop Until Xp <> - 1 
 	Delay 1000
-	Call Plugin.Bkgnd.LeftClick(HD2, 152, 674)//µã»÷ÌôÕ½
+	Call Plugin.Bkgnd.LeftClick(HD2, 152, 674)//ç‚¹å‡»æŒ‘æˆ˜
 	Delay 1000
 	//MsgBox "in1"
 	Do
-	XYp1 = Plugin.Bkgnd.FindColorEx(HD1, 732, 851, 776, 893, "97167D", 0, 0.8)//²é¿´ÊÇ·ñÇĞ»»³É¹¦
+	XYp1 = Plugin.Bkgnd.FindColorEx(HD1, 732, 851, 776, 893, "97167D", 0, 0.8)//æŸ¥çœ‹æ˜¯å¦åˆ‡æ¢æˆåŠŸ
 	ZBp1 = InStr(XYp1, "|")
 	Xp1 = Clng(Left(XYp1, ZBp1 - 1)) : Yp1 = Clng(Right(XYp1, Len(XYp1) - ZBp1))
 	Loop Until Xp1 <> - 1 
 	Delay 2000
 	
-	XYpt = Plugin.Bkgnd.FindPic(HD1, 523, 877, 621, 974, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Ê±¿ÕÃÔÎí-Ê£Óà´ÎÊı.bmp", 0, 0.9)//Ê£Óà´ÎÊı
+	XYpt = Plugin.Bkgnd.FindPic(HD1, 523, 877, 621, 974, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\æ—¶ç©ºè¿·é›¾-å‰©ä½™æ¬¡æ•°.bmp", 0, 0.9)//å‰©ä½™æ¬¡æ•°
 	iZBpt = InStr(XYpt, "|")
 	Xpt = CLng(Left(XYpt, iZBpt - 1))
 	Ypt = CLng(Right(XYpt, Len(XYpt) - iZBpt))
-	If Xpt = - 1  Then //Ê£Óà´ÎÊıÃ»ÓĞÁË
+	If Xpt = - 1  Then //å‰©ä½™æ¬¡æ•°æ²¡æœ‰äº†
 		MsgBox "drop out"
 		Delay 1000
 		Goto ExMi
 	End If
 
 //	
-//	XYpt = Plugin.Bkgnd.FindColorEx(HD1, 553, 906, 586, 940, "BBE3FF", 0, 0.9)//²é¿´ÊÇ·ñ´ò¹´
+//	XYpt = Plugin.Bkgnd.FindColorEx(HD1, 553, 906, 586, 940, "BBE3FF", 0, 0.9)//æŸ¥çœ‹æ˜¯å¦æ‰“å‹¾
 //	ZBpt = InStr(XYpt, "|")
 //	Xpt = Clng(Left(XYpt, ZBpt - 1)) : Ypt = Clng(Right(XYpt, Len(XYpt) - ZBpt))
 //	If Xpt <> - 1  Then 
@@ -178,54 +178,54 @@ Sub Ê±¿ÕÃÔÎí
 //		Goto ExMi
 //	End If
 	
-	Call Plugin.Bkgnd.LeftClick(HD2, 467, 703)//µã»÷Ê±¿ÕÃÔÎí
+	Call Plugin.Bkgnd.LeftClick(HD2, 467, 703)//ç‚¹å‡»æ—¶ç©ºè¿·é›¾
 	
 	Do
-	XYs1 = Plugin.Bkgnd.FindColorEx(HD1, 760, 489, 804, 533, "FCFFA3", 0, 0.9)//¼ì²â¼ÓºÅ Ó¦¹âÀÂ
+	XYs1 = Plugin.Bkgnd.FindColorEx(HD1, 760, 489, 804, 533, "FCFFA3", 0, 0.9)//æ£€æµ‹åŠ å· åº”å…‰ç¼†
 	ZBs1 = InStr(XYs1, "|")
 	Xs1 = Clng(Left(XYs1, ZBs1 - 1)) : Ys1 = Clng(Right(XYs1, Len(XYs1) - ZBs1))
 	Loop Until Xs1 <> - 1
 	Delay 1000
 
-	Call Plugin.Bkgnd.LeftClick(HD2, 686, 312)//µã»÷ÏÂÀ­
+	Call Plugin.Bkgnd.LeftClick(HD2, 686, 312)//ç‚¹å‡»ä¸‹æ‹‰
 	Delay 1000
 	
-	//Ñ¡ÔñÄÑ¶È
-	If dft = 0 Then //Èç¹ûdft=0ÔòÃ»ÓĞÑ¡ÔñÄÑ¶È ÓÒÖµÖ¤Ã÷ÊÇÍÆ³öÀ´µÄ
+	//é€‰æ‹©éš¾åº¦
+	If dft = 0 Then //å¦‚æœdft=0åˆ™æ²¡æœ‰é€‰æ‹©éš¾åº¦ å³å€¼è¯æ˜æ˜¯æ¨å‡ºæ¥çš„
 	
-		Call Plugin.Bkgnd.LeftClick(HD2, 427, 552)//µã»÷µØÓü
+		Call Plugin.Bkgnd.LeftClick(HD2, 427, 552)//ç‚¹å‡»åœ°ç‹±
 		Delay 1000
-		Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//µã»÷Ñ°ÕÒ¶ÓÎé
+		Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//ç‚¹å‡»å¯»æ‰¾é˜Ÿä¼
 		Delay 3000
-		XYs2 = Plugin.Bkgnd.FindPic(HD1, 301, 1127, 529, 1239, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Ê±¿ÕÃÔÎí-Ë¢ĞÂ.bmp", 0, 0.9)//pass
+		XYs2 = Plugin.Bkgnd.FindPic(HD1, 301, 1127, 529, 1239, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\æ—¶ç©ºè¿·é›¾-åˆ·æ–°.bmp", 0, 0.9)//pass
 		iZBs2 = InStr(XYs2, "|")
 		Xs2 = CLng(Left(XYs2, iZBs2 - 1))
 		Ys2 = CLng(Right(XYs2, Len(XYs2) - iZBs2))
 	
 		If Xs2 = - 1  Then 
 			Delay 1500
-			Call Plugin.Bkgnd.LeftClick(HD2, 686, 312)//µã»÷ÏÂÀ­
+			Call Plugin.Bkgnd.LeftClick(HD2, 686, 312)//ç‚¹å‡»ä¸‹æ‹‰
 			Delay 1000
 			
-			Call Plugin.Bkgnd.LeftClick(HD2, 426, 489)//µã»÷Ø¬ÃÎ
+			Call Plugin.Bkgnd.LeftClick(HD2, 426, 489)//ç‚¹å‡»å™©æ¢¦
 			Delay 1000
-			Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//µã»÷Ñ°ÕÒ¶ÓÎé
+			Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//ç‚¹å‡»å¯»æ‰¾é˜Ÿä¼
 			Delay 3000
-			XYs3 = Plugin.Bkgnd.FindPic(HD1, 301, 1127, 529, 1239, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Ê±¿ÕÃÔÎí-Ë¢ĞÂ.bmp", 0, 0.9)
+			XYs3 = Plugin.Bkgnd.FindPic(HD1, 301, 1127, 529, 1239, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\æ—¶ç©ºè¿·é›¾-åˆ·æ–°.bmp", 0, 0.9)
 			iZBs3 = InStr(XYs3, "|")
 			Xs3 = CLng(Left(XYs3, iZBs3 - 1))
 			Ys3 = CLng(Right(XYs3, Len(XYs3) - iZBs3))
 			
 			If Xs3 = - 1  Then 
 				Delay 1500
-				Call Plugin.Bkgnd.LeftClick(HD2, 686, 312)//µã»÷ÏÂÀ­
+				Call Plugin.Bkgnd.LeftClick(HD2, 686, 312)//ç‚¹å‡»ä¸‹æ‹‰
 				Delay 1000
 				
-				Call Plugin.Bkgnd.LeftClick(HD2, 429, 428)//µã»÷À§ÄÑ
+				Call Plugin.Bkgnd.LeftClick(HD2, 429, 428)//ç‚¹å‡»å›°éš¾
 				Delay 1000
-				Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//µã»÷Ñ°ÕÒ¶ÓÎé
+				Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//ç‚¹å‡»å¯»æ‰¾é˜Ÿä¼
 				Delay 3000
-				XYs4 = Plugin.Bkgnd.FindPic(HD1, 301, 1127, 529, 1239, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Ê±¿ÕÃÔÎí-Ë¢ĞÂ.bmp", 0, 0.9)
+				XYs4 = Plugin.Bkgnd.FindPic(HD1, 301, 1127, 529, 1239, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\æ—¶ç©ºè¿·é›¾-åˆ·æ–°.bmp", 0, 0.9)
 				iZBs4 = InStr(XYs4, "|")
 				Xs4 = CLng(Left(XYs4, iZBs4 - 1))
 				Ys4 = CLng(Right(XYs4, Len(XYs4) - iZBs4))
@@ -233,15 +233,15 @@ Sub Ê±¿ÕÃÔÎí
 				If Xs4 = - 1  Then 
 					dft = 1
 					Delay 1500
-					Call Plugin.Bkgnd.LeftClick(HD2, 686, 312)//µã»÷ÏÂÀ­
+					Call Plugin.Bkgnd.LeftClick(HD2, 686, 312)//ç‚¹å‡»ä¸‹æ‹‰
 					Delay 1000
 					
-					Call Plugin.Bkgnd.LeftClick(HD2, 433, 374)//µã»÷¼òµ¥
+					Call Plugin.Bkgnd.LeftClick(HD2, 433, 374)//ç‚¹å‡»ç®€å•
 					Delay 1000
-					Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//µã»÷Ñ°ÕÒ¶ÓÎé
+					Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//ç‚¹å‡»å¯»æ‰¾é˜Ÿä¼
 					Delay 3000
 					Do
-					XYs5 = Plugin.Bkgnd.FindPic(HD1, 301, 1127, 529, 1239, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Ê±¿ÕÃÔÎí-Ë¢ĞÂ.bmp", 0, 0.9)
+					XYs5 = Plugin.Bkgnd.FindPic(HD1, 301, 1127, 529, 1239, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\æ—¶ç©ºè¿·é›¾-åˆ·æ–°.bmp", 0, 0.9)
 					iZBs5 = InStr(XYs5, "|")
 					Xs5 = CLng(Left(XYs5, iZBs5 - 1))
 					Ys5 = CLng(Right(XYs5, Len(XYs5) - iZBs5))
@@ -259,106 +259,106 @@ Sub Ê±¿ÕÃÔÎí
 		Delay 1000
 		Select Case dft
 			Case 1
-				Call Plugin.Bkgnd.LeftClick(HD2, 436, 374)//µã»÷ÆÕÍ¨
+				Call Plugin.Bkgnd.LeftClick(HD2, 436, 374)//ç‚¹å‡»æ™®é€š
 				Delay 1000
 			Case 2
-				Call Plugin.Bkgnd.LeftClick(HD2, 436, 434)//µã»÷À§ÄÑ
+				Call Plugin.Bkgnd.LeftClick(HD2, 436, 434)//ç‚¹å‡»å›°éš¾
 				Delay 1000
 			Case 3
-				Call Plugin.Bkgnd.LeftClick(HD2, 436, 493)//µã»÷Ø¬ÃÎ
+				Call Plugin.Bkgnd.LeftClick(HD2, 436, 493)//ç‚¹å‡»å™©æ¢¦
 				Delay 1000
 			Case 4
-				Call Plugin.Bkgnd.LeftClick(HD2, 436, 546)//µã»÷µØÓü
+				Call Plugin.Bkgnd.LeftClick(HD2, 436, 546)//ç‚¹å‡»åœ°ç‹±
 				Delay 1000
 		End Select
-		Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//µã»÷Ñ°ÕÒ¶ÓÎé
+		Call Plugin.Bkgnd.LeftClick(HD2, 1641, 968)//ç‚¹å‡»å¯»æ‰¾é˜Ÿä¼
 	End If
 	Delay 1500
 	
-	Call Plugin.Bkgnd.LeftClick(HD2, 1772, 980)//µã»÷¿ìËÙÆ¥Åä
+	Call Plugin.Bkgnd.LeftClick(HD2, 1772, 980)//ç‚¹å‡»å¿«é€ŸåŒ¹é…
 	Delay 1500
 	Do
-	XYs6 = Plugin.Bkgnd.FindColorEx(HD1, 1601, 1099, 1659, 1140, "413EF0", 0, 0.95)//µÈ´ıµ½ÓÒºìÉ«µÄ×¼±¸½çÃæ
+	XYs6 = Plugin.Bkgnd.FindColorEx(HD1, 1601, 1099, 1659, 1140, "413EF0", 0, 0.95)//ç­‰å¾…åˆ°å³çº¢è‰²çš„å‡†å¤‡ç•Œé¢
 	ZBs6 = InStr(XYs6, "|")
 	Xs6 = Clng(Left(XYs6, ZBs6 - 1)) : Ys6 = Clng(Right(XYs6, Len(XYs6) - ZBs6))
 	Loop Until Xs6 <> - 1 
 	
-	//MsgBox "×¼±¸"
+	//MsgBox "å‡†å¤‡"
 	Delay 1000
-	//Ñ¡½ÇÉ«
-	Call Plugin.Bkgnd.LeftClick(HD2, 468, 968)//µã»÷Ñ¡Ôñ½ÇÉ«
+	//é€‰è§’è‰²
+	Call Plugin.Bkgnd.LeftClick(HD2, 468, 968)//ç‚¹å‡»é€‰æ‹©è§’è‰²
 	Delay 1700
 	
-	Call Plugin.Bkgnd.LeftClick(HD2, 293, 983)//µã»÷µÚÒ»½ÇÉ«
+	Call Plugin.Bkgnd.LeftClick(HD2, 293, 983)//ç‚¹å‡»ç¬¬ä¸€è§’è‰²
 	Delay 500
-	Call Plugin.Bkgnd.LeftClick(HD2, 443, 1015-200)//Ìæ»»µÚÒ»½ÇÉ«Î±
+	Call Plugin.Bkgnd.LeftClick(HD2, 443, 1015-200)//æ›¿æ¢ç¬¬ä¸€è§’è‰²ä¼ª
 	Delay 500
-	Call Plugin.Bkgnd.LeftClick(HD2, 293, 983)//µã»÷µÚÒ»½ÇÉ«
+	Call Plugin.Bkgnd.LeftClick(HD2, 293, 983)//ç‚¹å‡»ç¬¬ä¸€è§’è‰²
 	Delay 500
-	Call Plugin.Bkgnd.LeftClick(HD2, 409, 295)//Ìæ»»µÚÒ»½ÇÉ«
-	Delay 500
-	
-	Call Plugin.Bkgnd.LeftClick(HD2, 488, 986)//µã»÷µÚ¶ş½ÇÉ«
-	Delay 500
-	Call Plugin.Bkgnd.LeftClick(HD2, 674, 1021-200)//Ìæ»»µÚ2½ÇÉ«Î±
-	Delay 500
-	Call Plugin.Bkgnd.LeftClick(HD2, 488, 986)//µã»÷µÚ2½ÇÉ«
-	Delay 500
-	Call Plugin.Bkgnd.LeftClick(HD2, 697, 313)//Ìæ»»µÚ¶ş½ÇÉ«
+	Call Plugin.Bkgnd.LeftClick(HD2, 409, 295)//æ›¿æ¢ç¬¬ä¸€è§’è‰²
 	Delay 500
 	
-	Call Plugin.Bkgnd.LeftClick(HD2, 672, 984)//µã»÷µÚÈı½ÇÉ«
+	Call Plugin.Bkgnd.LeftClick(HD2, 488, 986)//ç‚¹å‡»ç¬¬äºŒè§’è‰²
+	Delay 500
+	Call Plugin.Bkgnd.LeftClick(HD2, 674, 1021-200)//æ›¿æ¢ç¬¬2è§’è‰²ä¼ª
+	Delay 500
+	Call Plugin.Bkgnd.LeftClick(HD2, 488, 986)//ç‚¹å‡»ç¬¬2è§’è‰²
+	Delay 500
+	Call Plugin.Bkgnd.LeftClick(HD2, 697, 313)//æ›¿æ¢ç¬¬äºŒè§’è‰²
+	Delay 500
+	
+	Call Plugin.Bkgnd.LeftClick(HD2, 672, 984)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²
 	Delay 1000
-	Call Plugin.Bkgnd.LeftClick(HD2, 910, 1010-200)//Ìæ»»µÚ3½ÇÉ«Î±
+	Call Plugin.Bkgnd.LeftClick(HD2, 910, 1010-200)//æ›¿æ¢ç¬¬3è§’è‰²ä¼ª
 	Delay 500
-	Call Plugin.Bkgnd.LeftClick(HD2, 672, 984)//µã»÷µÚ3½ÇÉ«
+	Call Plugin.Bkgnd.LeftClick(HD2, 672, 984)//ç‚¹å‡»ç¬¬3è§’è‰²
 	Delay 500
-	Call Plugin.Bkgnd.LeftClick(HD2, 910, 332)//Ìæ»»µÚÈı½ÇÉ«
+	Call Plugin.Bkgnd.LeftClick(HD2, 910, 332)//æ›¿æ¢ç¬¬ä¸‰è§’è‰²
 	Delay 1000
 	
-	Call Plugin.Bkgnd.LeftClick(HD2, 1690, 968)//µã»÷·µ»Ø
+	Call Plugin.Bkgnd.LeftClick(HD2, 1690, 968)//ç‚¹å‡»è¿”å›
 	
-	//µã»÷×¼±¸
+	//ç‚¹å‡»å‡†å¤‡
 	Delay 1000
-	Call Plugin.Bkgnd.LeftClick(HD2, 1693, 933)//µã»÷×¼±¸
-	//MsgBox "×¼±¸iÕ½¶·"
+	Call Plugin.Bkgnd.LeftClick(HD2, 1693, 933)//ç‚¹å‡»å‡†å¤‡
+	//MsgBox "å‡†å¤‡iæˆ˜æ–—"
 	Delay 5000
 	Dim StateF
 	StateF = 0
-	StateF = Ê±¿ÕÃÔÎíÕ½¶·()
+	StateF = æ—¶ç©ºè¿·é›¾æˆ˜æ–—()
 	
 	If StateF = 1 Then 
 		//MsgBox "victory"
 		Do
-		XYf6 = Plugin.Bkgnd.FindPic(HD1, 812, 1103, 1136, 1209, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Ê±¿ÕÃÔÎí-Õ½¶·Ê¤Àû.bmp", 0, 0.7)//Õ½¶·Ê¤Àû pass
+		XYf6 = Plugin.Bkgnd.FindPic(HD1, 812, 1103, 1136, 1209, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\æ—¶ç©ºè¿·é›¾-æˆ˜æ–—èƒœåˆ©.bmp", 0, 0.7)//æˆ˜æ–—èƒœåˆ© pass
 		iZBf6 = InStr(XYf6, "|")
 		Xf6 = CLng(Left(XYf6, iZBf6 - 1))
 		Yf6 = CLng(Right(XYf6, Len(XYf6) - iZBf6))
 		Loop Until Xf6 <> - 1 
-		//MsgBox "ÕÒµ½ Ìø¹ı×ÖÑù"
+		//MsgBox "æ‰¾åˆ° è·³è¿‡å­—æ ·"
 		
 		Delay 2000
-		Call Plugin.Bkgnd.LeftClick(HD2, 962, 954)//µã»÷Ìø¹ı
+		Call Plugin.Bkgnd.LeftClick(HD2, 962, 954)//ç‚¹å‡»è·³è¿‡
 		Delay 3000
 		
-		Call Plugin.Bkgnd.LeftClick(HD2, 955, 997)//µã»÷ÈÎÒâÒ»´¦·µ»Ø£¿£¿
+		Call Plugin.Bkgnd.LeftClick(HD2, 955, 997)//ç‚¹å‡»ä»»æ„ä¸€å¤„è¿”å›ï¼Ÿï¼Ÿ
 		
 		Delay 7000
 
 		Do
-		//¿ÉÄÜ·µ»Ø¶¼ÊĞ»òÔÙÆ¥Åä½çÃæ
-		XYs7 = Plugin.Bkgnd.FindPic(HD1, 1612, 1119, 1842, 1201, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Ê±¿ÕÃÔÎí-Ê¤ÀûÆ¥Åä.bmp", 0, 0.9)//µÈµ½Æ¥Åä³öÏÖ pass
+		//å¯èƒ½è¿”å›éƒ½å¸‚æˆ–å†åŒ¹é…ç•Œé¢
+		XYs7 = Plugin.Bkgnd.FindPic(HD1, 1612, 1119, 1842, 1201, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\æ—¶ç©ºè¿·é›¾-èƒœåˆ©åŒ¹é….bmp", 0, 0.9)//ç­‰åˆ°åŒ¹é…å‡ºç° pass
 		iZBs7 = InStr(XYs7, "|")
 		Xs7 = CLng(Left(XYs7, iZBs7 - 1))
 		Ys7 = CLng(Right(XYs7, Len(XYs7) - iZBs7))
 		
-		aXY9 = Plugin.Bkgnd.FindColorEx(HD1, 1611, 230, 1623, 244, "FBFFA2", 0, 0.9)//¼ì²âÅ·°Ø¼ÓºÅ
+		aXY9 = Plugin.Bkgnd.FindColorEx(HD1, 1611, 230, 1623, 244, "FBFFA2", 0, 0.9)//æ£€æµ‹æ¬§æŸåŠ å·
 		aZB9 = InStr(aXY9, "|")
 		aX9 = Clng(Left(aXY9, aZB9 - 1)) : aY9 = Clng(Right(aXY9, Len(aXY9) - aZB9))
 		Delay 800
 		Loop Until Xs7 <> - 1  or aX9 <> - 1 
 		
-		If aX9 <> - 1  Then //Èç¹ûÍË»Øµ½Ö÷Ò³Ãæ
+		If aX9 <> - 1  Then //å¦‚æœé€€å›åˆ°ä¸»é¡µé¢
 			Delay 1000
 			Goto Redo
 		End If
@@ -367,34 +367,34 @@ Sub Ê±¿ÕÃÔÎí
 		
 		Dim Xs8
 		Xs8 = -1
-		//¼ì²âÊ£Óà´ÎÊı Ñ­»·¼ì²â20s 0/10Í¼Æ¬
+		//æ£€æµ‹å‰©ä½™æ¬¡æ•° å¾ªç¯æ£€æµ‹20s 0/10å›¾ç‰‡
 		For 1000
-		XYn1 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ÃÔÎí-ÎŞ´ÎÊı.bmp", 0, 0.8)
+		XYn1 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\è¿·é›¾-æ— æ¬¡æ•°.bmp", 0, 0.8)
 		iZBn1 = InStr(XYn1, "|")
 		Xn1 = CLng(Left(XYn1, iZBn1 - 1))
 		Yn1 = CLng(Right(XYn1, Len(XYn1) - iZBn1))
 		
-		XYn2 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ÃÔÎí-ÎŞ´ÎÊı1.bmp", 0, 0.8)
+		XYn2 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\è¿·é›¾-æ— æ¬¡æ•°1.bmp", 0, 0.8)
 		iZBn2 = InStr(XYn2, "|")
 		Xn2 = CLng(Left(XYn2, iZBn2 - 1))
 		Yn2 = CLng(Right(XYn2, Len(XYn2) - iZBn2))
 		
-		XYn3 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ÃÔÎí-ÎŞ´ÎÊı2.bmp", 0, 0.8)
+		XYn3 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\è¿·é›¾-æ— æ¬¡æ•°2.bmp", 0, 0.8)
 		iZBn3 = InStr(XYn3, "|")
 		Xn3 = CLng(Left(XYn3, iZBn3 - 1))
 		Yn3 = CLng(Right(XYn3, Len(XYn3) - iZBn3))
 		
-		XYn4 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ÃÔÎí-ÎŞ´ÎÊı3.bmp", 0, 0.8)
+		XYn4 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\è¿·é›¾-æ— æ¬¡æ•°3.bmp", 0, 0.8)
 		iZBn4 = InStr(XYn4, "|")
 		Xn4 = CLng(Left(XYn4, iZBn4 - 1))
 		Yn4 = CLng(Right(XYn4, Len(XYn4) - iZBn4))
 		
-		XYn5 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ÃÔÎí-ÎŞ´ÎÊı4.bmp", 0, 0.8)
+		XYn5 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\è¿·é›¾-æ— æ¬¡æ•°4.bmp", 0, 0.8)
 		iZBn5 = InStr(XYn5, "|")
 		Xn5 = CLng(Left(XYn5, iZBn5 - 1))
 		Yn5 = CLng(Right(XYn5, Len(XYn5) - iZBn5))
 		
-		XYn6 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ÃÔÎí-ÎŞ´ÎÊı5.bmp", 0, 0.8)
+		XYn6 = Plugin.Bkgnd.FindPic(HD1, 1758, 1212, 1876, 1290, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\è¿·é›¾-æ— æ¬¡æ•°5.bmp", 0, 0.8)
 		iZBn6 = InStr(XYn6, "|")
 		Xn6 = CLng(Left(XYn6, iZBn6 - 1))
 		Yn6 = CLng(Right(XYn6, Len(XYn6) - iZBn6))
@@ -404,49 +404,49 @@ Sub Ê±¿ÕÃÔÎí
 		End if
 		Delay 20
 		Next
-		//Èç¹ûXs8 ÎªÒ»ÔòÖ¤Ã÷ÒÑ¾­´òÍêÁË
+		//å¦‚æœXs8 ä¸ºä¸€åˆ™è¯æ˜å·²ç»æ‰“å®Œäº†
 		Rem K
 		
 		If Xs8 <> - 1  Then 
 			Delay 1000
-			Call Plugin.Bkgnd.LeftClick(HD2, 102, 32)//µã»÷»ØÍË¼ıÍ·
+			Call Plugin.Bkgnd.LeftClick(HD2, 102, 32)//ç‚¹å‡»å›é€€ç®­å¤´
 			Delay 1000
 			Do
-			XYs10 = Plugin.Bkgnd.FindColorEx(HD1, 853, 866, 896, 909, "C0C778", 0, 0.9)//ÊÇ·ñÍË³ö¶ÓÎé
+			XYs10 = Plugin.Bkgnd.FindColorEx(HD1, 853, 866, 896, 909, "C0C778", 0, 0.9)//æ˜¯å¦é€€å‡ºé˜Ÿä¼
 			ZBs10 = InStr(XYs10, "|")
 			Xs10 = Clng(Left(XYs10, ZBs10 - 1)): Ys10 = Clng(Right(XYs10, Len(XYs10) - ZBs10))
 			Loop Until Xs10 <> - 1 
 			Delay 1000
-			Call Plugin.Bkgnd.LeftClick(HD2, 1206, 710)//µã»÷È·¶¨
+			Call Plugin.Bkgnd.LeftClick(HD2, 1206, 710)//ç‚¹å‡»ç¡®å®š
 			Delay 1000
 			Do
-			XYs11 = Plugin.Bkgnd.FindColorEx(HD1, 1402, 212, 1441, 253, "E343DF", 0, 0.9)//»Øµ½ÂÒÁ÷½çÃæ
+			XYs11 = Plugin.Bkgnd.FindColorEx(HD1, 1402, 212, 1441, 253, "E343DF", 0, 0.9)//å›åˆ°ä¹±æµç•Œé¢
 			ZBs11 = InStr(XYs11, "|")
 			Xs11 = Clng(Left(XYs11, ZBs11 - 1)): Ys11 = Clng(Right(XYs11, Len(XYs11) - ZBs11))
 			Loop Until Xs11 <> - 1 
 			Delay 1000
-			Call Plugin.Bkgnd.LeftClick(HD2, 102, 32)//µã»÷»ØÍË¼ıÍ·
+			Call Plugin.Bkgnd.LeftClick(HD2, 102, 32)//ç‚¹å‡»å›é€€ç®­å¤´
 			Delay 1000
 			
 			Goto ExMi
 		End If
 		
 		Delay 2000
-		Call Plugin.Bkgnd.LeftClick(HD2, 1705, 975)//µã»÷Æ¥Åä
+		Call Plugin.Bkgnd.LeftClick(HD2, 1705, 975)//ç‚¹å‡»åŒ¹é…
 	Else 
-		//MsgBox "Ê±¿ÕÃÔÎí½áÊø"
+		//MsgBox "æ—¶ç©ºè¿·é›¾ç»“æŸ"
 	End If
 	
 	Rem ExMi
 	Delay 1000
 	Do
-	XYs12 = Plugin.Bkgnd.FindColorEx(HD1, 452, 984, 484, 1008, "8BDFFF", 0, 0.9)//»Øµ½ÌôÕ½½çÃæ
+	XYs12 = Plugin.Bkgnd.FindColorEx(HD1, 452, 984, 484, 1008, "8BDFFF", 0, 0.9)//å›åˆ°æŒ‘æˆ˜ç•Œé¢
 	ZBs12 = InStr(XYs12, "|")
 	Xs12 = Clng(Left(XYs12, ZBs12 - 1)) : Ys12 = Clng(Right(XYs12, Len(XYs12) - ZBs12))
 	Loop Until Xs12 <> -1
 
-	MsgBox "Ê±¿ÕÃÔÎí½áÊø"
-	//812, 1103  1136, 1209 Õ½¶·Ê¤Àû·¶Î§
+	MsgBox "æ—¶ç©ºè¿·é›¾ç»“æŸ"
+	//812, 1103  1136, 1209 æˆ˜æ–—èƒœåˆ©èŒƒå›´
 End Sub
 
 
@@ -454,21 +454,21 @@ End Sub
 
 //	Delay 1500
 //	Do
-//	XYs6 = Plugin.Bkgnd.FindColorEx(HD1, 1601, 1099, 1659, 1140, "413EF0", 0, 0.95)//µÈ´ıµ½ÓÒºìÉ«µÄ×¼±¸½çÃæ
+//	XYs6 = Plugin.Bkgnd.FindColorEx(HD1, 1601, 1099, 1659, 1140, "413EF0", 0, 0.95)//ç­‰å¾…åˆ°å³çº¢è‰²çš„å‡†å¤‡ç•Œé¢
 //	ZBs6 = InStr(XYs6, "|")
 //	Xs6 = Clng(Left(XYs6, ZBs6 - 1)) : Ys6 = Clng(Right(XYs6, Len(XYs6) - ZBs6))
 //	Loop Until Xs6 <> - 1 
 //	Delay 200
-//	Call Plugin.Bkgnd.LeftClick(HD2, 147, 972)//µã»÷È¡ÏûÆ¥Åä
+//	Call Plugin.Bkgnd.LeftClick(HD2, 147, 972)//ç‚¹å‡»å–æ¶ˆåŒ¹é…
 //	Delay 1000
-//	Call Plugin.Bkgnd.LeftClick(HD2, 147, 972)//Í¬ÑùÎ»ÖÃµã»÷¸ü¸ÄÉÏÕó
+//	Call Plugin.Bkgnd.LeftClick(HD2, 147, 972)//åŒæ ·ä½ç½®ç‚¹å‡»æ›´æ”¹ä¸Šé˜µ
 //	Delay 1500
-//	Call Plugin.Bkgnd.LeftClick(HD2, 423, 311)//µã»÷µÚÒ»½ÇÉ«
+//	Call Plugin.Bkgnd.LeftClick(HD2, 423, 311)//ç‚¹å‡»ç¬¬ä¸€è§’è‰²
 //	Delay 1500
-//	Call Plugin.Bkgnd.LeftClick(HD2, 1704, 1024)//µã»÷È·ÈÏ
+//	Call Plugin.Bkgnd.LeftClick(HD2, 1704, 1024)//ç‚¹å‡»ç¡®è®¤
 //	Delay 1000
-//	Call Plugin.Bkgnd.LeftClick(HD2, 1693, 933)//µã»÷Æ¥Åä
-//	//MsgBox "×¼±¸iÕ½¶·"
+//	Call Plugin.Bkgnd.LeftClick(HD2, 1693, 933)//ç‚¹å‡»åŒ¹é…
+//	//MsgBox "å‡†å¤‡iæˆ˜æ–—"
 //	Delay 7000
 
 
@@ -493,11 +493,11 @@ Call HP
     	Index = Split(Form1.ComboBox1.List,"|")   
 		TracePrint Index(Form1.ComboBox1.ListIndex)
 		
-		Dim Â·¾¶
-		Â·¾¶ = "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\" & Index(Form1.ComboBox1.ListIndex) & ".bmp"
-		TracePrint Â·¾¶
+		Dim è·¯å¾„
+		è·¯å¾„ = "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\" & Index(Form1.ComboBox1.ListIndex) & ".bmp"
+		TracePrint è·¯å¾„
 		
-		XY = Plugin.Bkgnd.FindPic(HD1, 364, 406, 776, 603, Â·¾¶, 0, 0.9)
+		XY = Plugin.Bkgnd.FindPic(HD1, 364, 406, 776, 603, è·¯å¾„, 0, 0.9)
 		iZB = InStr(XY, "|")
 		X = CLng(Left(XY, iZB - 1))
 		Y = CLng(Right(XY, Len(XY) - iZB))
@@ -505,40 +505,40 @@ Call HP
 		ExitScript
 End Event
  
-Function »¬¶¯(Code, X1, Y1, X2, Y2, S)
+Function æ»‘åŠ¨(Code, X1, Y1, X2, Y2, S)
     X1 = X1 + 150: Y1 = Y1 +150: X2 = X2 + 150: Y2 = Y2 +150
-    ÃüÁî = "shell input swipe " & X1 & " " & Y1 & " " & X2 & " " & Y2 & " " & S
-    ÃüÁî = """" & ÃüÁî & """"
-    TracePrint ÃüÁî
+    å‘½ä»¤ = "shell input swipe " & X1 & " " & Y1 & " " & X2 & " " & Y2 & " " & S
+    å‘½ä»¤ = """" & å‘½ä»¤ & """"
+    TracePrint å‘½ä»¤
 
     //Call ExtractPathSimplified
-    //Â·¾¶ = "D:&&CD " & ADR2
+    //è·¯å¾„ = "D:&&CD " & ADR2
     //D:\MuMu Player 12\shell
-    Â·¾¶ = "D:&&CD D:\¹¤³Ì\MuMu Player 12\shell"
-    ÃüÁîĞĞ = Â·¾¶ & "&&MuMuManager.exe adb -v " & Code & " -c " & ÃüÁî
-//msgbox ÃüÁîĞĞ
-    TracePrint ÃüÁîĞĞ
-    Plugin.SMWH.GetDOS ÃüÁîĞĞ
+    è·¯å¾„ = "D:&&CD D:\å·¥ç¨‹\MuMu Player 12\shell"
+    å‘½ä»¤è¡Œ = è·¯å¾„ & "&&MuMuManager.exe adb -v " & Code & " -c " & å‘½ä»¤
+//msgbox å‘½ä»¤è¡Œ
+    TracePrint å‘½ä»¤è¡Œ
+    Plugin.SMWH.GetDOS å‘½ä»¤è¡Œ
 End Function
 
 Function ExtractPathSimplified
 	Dim LOG108
-    LOG108 = "Â·¾¶½ØÈ¡´¦Àí"
+    LOG108 = "è·¯å¾„æˆªå–å¤„ç†"
     Form1.ListBox2.AddItem LOG108
     
     Dim lastSlash 
 
-    ' ÕÒµ½×îºóÒ»¸ö·´Ğ±¸ÜµÄÎ»ÖÃ
+    ' æ‰¾åˆ°æœ€åä¸€ä¸ªåæ–œæ çš„ä½ç½®
     lastSlash = InStrRev(APPROUTE, "\")
     
-    ' ÌáÈ¡Â·¾¶²¢È¥³ı×îºóÒ»¸ö·´Ğ±¸Ü
+    ' æå–è·¯å¾„å¹¶å»é™¤æœ€åä¸€ä¸ªåæ–œæ 
     If lastSlash > 1 Then
         ADR2 = Left(APPROUTE, lastSlash - 1)
     Else
         ADR2 = APPROUTE
     End If
     
-    ' Êä³ö½á¹û
+    ' è¾“å‡ºç»“æœ
     TracePrint ADR2
 	MsgBox ADR2
     Delay 1000
@@ -547,22 +547,22 @@ End Function
 
 
 
-Function Ê±¿ÕÃÔÎíÕ½¶·
-Rem Õ½¶·
+Function æ—¶ç©ºè¿·é›¾æˆ˜æ–—
+Rem æˆ˜æ–—
 	TracePrint "start"
 	//MsgBox "Start"
 	Delay 1000
-	//¼ì²âÕ½¶·¿ªÊ¼ ¹Ø±ÕÕ½¶·Á¢»æ
+	//æ£€æµ‹æˆ˜æ–—å¼€å§‹ å…³é—­æˆ˜æ–—ç«‹ç»˜
 	Do	
-	XYk = Plugin.Bkgnd.FindColorEx(HD1, 1728, 1118, 1739, 1128, "EEE9F4", 0, 0.8)//¼ì²âÆÕÍ¨¹¥»÷½»²æ½£µÄÉÏÃæµÄ·ÛÉ«
+	XYk = Plugin.Bkgnd.FindColorEx(HD1, 1728, 1118, 1739, 1128, "EEE9F4", 0, 0.8)//æ£€æµ‹æ™®é€šæ”»å‡»äº¤å‰å‰‘çš„ä¸Šé¢çš„ç²‰è‰²
 	ZBk = InStr(XYk, "|")
 	Xk = Clng(Left(XYk, ZBk - 1)) : Yk = Clng(Right(XYk, Len(XYk) - ZBk))
 	
-	XYkk = Plugin.Bkgnd.FindColorEx(HD1, 1815, 1127, 1825, 1142, "F2E3EA", 0, 0.8)//¼ì²âÆÕÍ¨¹¥»÷½»²æ½£µÄÉÏÃæµÄ·ÛÉ«
+	XYkk = Plugin.Bkgnd.FindColorEx(HD1, 1815, 1127, 1825, 1142, "F2E3EA", 0, 0.8)//æ£€æµ‹æ™®é€šæ”»å‡»äº¤å‰å‰‘çš„ä¸Šé¢çš„ç²‰è‰²
 	ZBkk = InStr(XYkk, "|")
 	Xkk = Clng(Left(XYkk, ZBkk - 1)) : Ykk = Clng(Right(XYkk, Len(XYkk) - ZBkk))
 
-	XYf = Plugin.Bkgnd.FindColorEx(HD1, 1737, 1083, 1769, 1101, "7C6ABE", 0, 0.8)//¼ì²âÆÕÍ¨¹¥»÷½»²æ½£µÄÉÏÃæµÄ·ÛÉ«
+	XYf = Plugin.Bkgnd.FindColorEx(HD1, 1737, 1083, 1769, 1101, "7C6ABE", 0, 0.8)//æ£€æµ‹æ™®é€šæ”»å‡»äº¤å‰å‰‘çš„ä¸Šé¢çš„ç²‰è‰²
 	ZBf = InStr(XYf, "|")
 	Xf = Clng(Left(XYf, ZBf - 1)) : Yf = Clng(Right(XYf, Len(XYf) - ZBf))
 	Loop Until Xf <> - 1  and Xk <> - 1  and Xkk <> - 1 
@@ -570,7 +570,7 @@ Rem Õ½¶·
 	Delay 800
 	//MsgBox "testgo"
 	
-	//Ò»ÉÏÀ´¾ÍÁ¢¿Ì¼ì²â´óÕĞÇé¿ö
+	//ä¸€ä¸Šæ¥å°±ç«‹åˆ»æ£€æµ‹å¤§æ‹›æƒ…å†µ
 		GetColor1q = Plugin.Bkgnd.GetPixelColor(HD1, 1174, 1157)
 		GetColor2q = Plugin.Bkgnd.GetPixelColor(HD1, 1184, 1167)
 		GetColor3q = Plugin.Bkgnd.GetPixelColor(HD1, 1180, 1160)
@@ -580,21 +580,21 @@ Rem Õ½¶·
 		GetColor6q = Plugin.Bkgnd.GetPixelColor(HD1, 1347, 1162)
 
 	Delay 200
-	Call Plugin.Bkgnd.LeftClick(HD2, 1860, 74)//µã»÷Õ½¶·ÉèÖÃ
+	Call Plugin.Bkgnd.LeftClick(HD2, 1860, 74)//ç‚¹å‡»æˆ˜æ–—è®¾ç½®
 	Delay 1000
-	Call Plugin.Bkgnd.LeftClick(HD2, 983, 632)//µã»÷¹Ø±ÕÁ¢»æ
+	Call Plugin.Bkgnd.LeftClick(HD2, 983, 632)//ç‚¹å‡»å…³é—­ç«‹ç»˜
 	Delay 1000
-	Call Plugin.Bkgnd.LeftClick(HD2, 1468, 916)//µã»÷¼ÌĞøÕ½¶·
+	Call Plugin.Bkgnd.LeftClick(HD2, 1468, 916)//ç‚¹å‡»ç»§ç»­æˆ˜æ–—
 	Delay 700
 	
-	//×Ô¶¯Õ½¶·¼ì²â
+	//è‡ªåŠ¨æˆ˜æ–—æ£€æµ‹
 	Delay 2000
-	XYf1 = Plugin.Bkgnd.FindColorEx(HD1, 1652, 263, 1663, 294, "B8B468", 0, 0.9)//ÓĞÃ»ÓĞÇàÉ« ÔÚµçÄÔ±êÊ¶
+	XYf1 = Plugin.Bkgnd.FindColorEx(HD1, 1652, 263, 1663, 294, "B8B468", 0, 0.9)//æœ‰æ²¡æœ‰é’è‰² åœ¨ç”µè„‘æ ‡è¯†
 	ZBf1 = InStr(XYf1, "|")
 	Xf1 = Clng(Left(XYf1, ZBf1 - 1)): Yf1 = Clng(Right(XYf1, Len(XYf1) - ZBf1))
-	If Xf1 <> - 1  Then //Èç¹ûÆô¶¯ÁË´úÀí
+	If Xf1 <> - 1  Then //å¦‚æœå¯åŠ¨äº†ä»£ç†
 	Else 
-		Call Plugin.Bkgnd.LeftClick(HD2, 1652, 71)//µã»÷Æô¶¯×Ô¶¯´úÀí
+		Call Plugin.Bkgnd.LeftClick(HD2, 1652, 71)//ç‚¹å‡»å¯åŠ¨è‡ªåŠ¨ä»£ç†
 		Delay 1000
 	End If
 	
@@ -602,23 +602,23 @@ Rem Õ½¶·
 	Situation = 1
 		
 	Do
-		XYfa = Plugin.Bkgnd.FindPic(HD1, 980, 669, 1290, 772, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Õ½¶·Ê§°Ü.bmp", 0, 0.9)//Õ½¶·Ê§°Ü
+		XYfa = Plugin.Bkgnd.FindPic(HD1, 980, 669, 1290, 772, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\æˆ˜æ–—å¤±è´¥.bmp", 0, 0.9)//æˆ˜æ–—å¤±è´¥
 		iZBfa = InStr(XYfa, "|")
 		Xfa = CLng(Left(XYfa, iZBfa - 1))
 		Yfa = CLng(Right(XYfa, Len(XYfa) - iZBfa))
 		
-		XYfb = Plugin.Bkgnd.FindPic(HD1, 1386, 1087, 1564, 1215, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\ÍòÉñµî-¼ÌĞøÌôÕ½.bmp", 0, 0.76)//µÈ´ıµ½¼ÌĞøÌôÕ½³öÏÖ pass
+		XYfb = Plugin.Bkgnd.FindPic(HD1, 1386, 1087, 1564, 1215, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\ä¸‡ç¥æ®¿-ç»§ç»­æŒ‘æˆ˜.bmp", 0, 0.76)//ç­‰å¾…åˆ°ç»§ç»­æŒ‘æˆ˜å‡ºç° pass
 		iZBfb = InStr(XYfb, "|")
 		Xfb = CLng(Left(XYfb, iZBfb - 1))
 		Yfb = CLng(Right(XYfb, Len(XYfb) - iZBfb))
 		
 		If Xfb <> - 1  or Xfa <> - 1  Then 
 			//MsgBox Xfa &"|"& Yfa &"   "& Xfb &"|"& Yfb
-			MsgBox "ÍË³ö"
+			MsgBox "é€€å‡º"
 			Goto Exinner
 		End If
-		//¼ì²âÁ½¸ö´ÎÒª½ÇÉ«µÄ´óÕĞÀäÈ´
-		Delay 1000//¼ì²âÆµÂÊ
+		//æ£€æµ‹ä¸¤ä¸ªæ¬¡è¦è§’è‰²çš„å¤§æ‹›å†·å´
+		Delay 1000//æ£€æµ‹é¢‘ç‡
 		
 		GetColor7q = Plugin.Bkgnd.GetPixelColor(HD1, 1174, 1157)
 		GetColor8q = Plugin.Bkgnd.GetPixelColor(HD1, 1184, 1167)
@@ -628,8 +628,8 @@ Rem Õ½¶·
 		GetColor11q = Plugin.Bkgnd.GetPixelColor(HD1, 1353, 1168)
 		GetColor12q = Plugin.Bkgnd.GetPixelColor(HD1, 1347, 1162)
 		
-		//MsgBox "´óÕĞ¼ì²â £º" & GetColor1q & " | " & GetColor7q & " ; " & GetColor2q & " | " & GetColor8q & " ; " & GetColor3q & " | " & GetColor9q & "  : " & GetColor4q & " | " & GetColor10q & "  ; " & GetColor5q & " | " & GetColor11q & " : " & GetColor6q & " | " & GetColor12q
-//		MsgBox "´óÕĞ¼ì²â £º"&GetColor7 & " | " & gc1&" ; "&GetColor8 & " | " & gc2&" ; "&GetColor9 & " | " & gc3&"  : "&GetColor10 & " | " & gc4&"  ; "&GetColor11 & " | " & gc5&" : "&GetColor12 & " | " & gc6
+		//MsgBox "å¤§æ‹›æ£€æµ‹ ï¼š" & GetColor1q & " | " & GetColor7q & " ; " & GetColor2q & " | " & GetColor8q & " ; " & GetColor3q & " | " & GetColor9q & "  : " & GetColor4q & " | " & GetColor10q & "  ; " & GetColor5q & " | " & GetColor11q & " : " & GetColor6q & " | " & GetColor12q
+//		MsgBox "å¤§æ‹›æ£€æµ‹ ï¼š"&GetColor7 & " | " & gc1&" ; "&GetColor8 & " | " & gc2&" ; "&GetColor9 & " | " & gc3&"  : "&GetColor10 & " | " & gc4&"  ; "&GetColor11 & " | " & gc5&" : "&GetColor12 & " | " & gc6
 //		TracePrint GetColor7 & " | " & gc1
 //		TracePrint GetColor8 & " | " & gc2
 //		TracePrint GetColor9 & " | " & gc3
@@ -652,90 +652,90 @@ Rem Õ½¶·
 //			TracePrint GetColor1q & " | " & GetColor7q
 //			TracePrint GetColor2q & " | " & GetColor8q
 //			TracePrint GetColor3q & " | " & GetColor9q
-//			TracePrint "¶ş½ÇÉ«¿ª´ò"
-			Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+//			TracePrint "äºŒè§’è‰²å¼€æ‰“"
+			Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 			Delay 300
 		End If
 		If GetColor10q = GetColor4q and GetColor11q = GetColor5q and GetColor12q = GetColor6q Then 
 //			TracePrint GetColor4q & " | " & GetColor10q
 //			TracePrint GetColor5q & " | " & GetColor11q
 //			TracePrint GetColor6q & " | " & GetColor12q
-//			TracePrint "Èı½ÇÉ«¿ª´ò"
-			Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+//			TracePrint "ä¸‰è§’è‰²å¼€æ‰“"
+			Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 			Delay 300
 		End If
 		
-		Dim T1, T2, T3//³õÊ¼»¯½ÇÉ« 1²»´¥·¢
+		Dim T1, T2, T3//åˆå§‹åŒ–è§’è‰² 1ä¸è§¦å‘
 				T1 = 1
 				T2 = 1
 				T3 = 1
 		//MsgBox Situation
 		Select Case Situation
-			Case 1//µÚÒ»½ÇÉ«ÎªÖ÷½ÇÉ«
+			Case 1//ç¬¬ä¸€è§’è‰²ä¸ºä¸»è§’è‰²
 				//MsgBox "first"
 				Delay 800
-				//ÑªÁ¿33%
+				//è¡€é‡33%
 				GetColor = Plugin.Bkgnd.GetPixelColor(HD1, 21, 330)
 				GetColor1 = Plugin.Bkgnd.GetPixelColor(HD1, 22, 330)
 				GetColor2 = Plugin.Bkgnd.GetPixelColor(HD1, 23, 330)
-				//ÑªÁ¿50%
+				//è¡€é‡50%
 				GetColor3 = Plugin.Bkgnd.GetPixelColor(HD1, 88, 369)
 				GetColor4 = Plugin.Bkgnd.GetPixelColor(HD1, 88, 370)
 				GetColor5 = Plugin.Bkgnd.GetPixelColor(HD1, 88, 371)
 
-				//ÑªÁ¿33%
+				//è¡€é‡33%
 				GetColor6 = Plugin.Bkgnd.GetPixelColor(HD1, 95, 474)
 				GetColor7 = Plugin.Bkgnd.GetPixelColor(HD1, 96, 474)
 				GetColor8 = Plugin.Bkgnd.GetPixelColor(HD1, 97, 474)
-				//ÑªÁ¿50%
+				//è¡€é‡50%
 				GetColor9 = Plugin.Bkgnd.GetPixelColor(HD1, 149, 505)
 				GetColor10 = Plugin.Bkgnd.GetPixelColor(HD1, 149, 506)
 	
-				//ÑªÁ¿33%
+				//è¡€é‡33%
 				GetColor11 = Plugin.Bkgnd.GetPixelColor(HD1, 30, 624)
 				GetColor12 = Plugin.Bkgnd.GetPixelColor(HD1, 31, 624)
-				//ÑªÁ¿50%
+				//è¡€é‡50%
 				GetColor13 = Plugin.Bkgnd.GetPixelColor(HD1, 83, 655)
 				GetColor14 = Plugin.Bkgnd.GetPixelColor(HD1, 84, 655)
 				
-				If Form1.OptionBox47.Value = 1 Then //33%ÑªÁ¿Ô¤¾¯
-					//Èç¹û½ÇÉ«T1µÄÈı¸ö33%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+				If Form1.OptionBox47.Value = 1 Then //33%è¡€é‡é¢„è­¦
+					//å¦‚æœè§’è‰²T1çš„ä¸‰ä¸ª33%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor = "15100F" or GetColor = "140F0E" or GetColor = "171110" or GetColor = "161010" or GetColor1 = "15100F" or GetColor1 = "140F0E" or GetColor1 = "171110" or GetColor1 = "161010" or GetColor2 = "15100F" or GetColor2 = "140F0E" or GetColor2 = "171110" or GetColor2 = "161010" Then 
 						//MsgBox "T1 33%"
 						T1 = 0
 					Else 
 						T1 = 1
 					End If
-					//Èç¹û½ÇÉ«T2µÄÈı¸ö33%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T2çš„ä¸‰ä¸ª33%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor6 = "15100F" or GetColor6 = "140F0E" or GetColor6 = "171110" or GetColor6 = "161010" or GetColor7 = "15100F" or GetColor7 = "140F0E" or GetColor7 = "171110" or GetColor7 = "161010" or GetColor8 = "15100F" or GetColor8 = "140F0E" or GetColor8 = "171110" or GetColor8 = "161010" Then 
 						//MsgBox "T2 33%"
 						T2 = 0
 					Else 
 						T2 = 1
 					End If
-					//Èç¹û½ÇÉ«T3µÄÈı¸ö33%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T3çš„ä¸‰ä¸ª33%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor11 = "15100F" or GetColor11 = "140F0E" or GetColor11 = "171110" or GetColor11 = "161010" or GetColor12 = "15100F" or GetColor12 = "140F0E" or GetColor12 = "171110" or GetColor12 = "161010" Then 
 						//MsgBox "T3 33%"
 						T3 = 0
 					Else 
 						T3 = 1
 					End If
-				ElseIf Form1.OptionBox46.Value = 1 Then//50%ÑªÁ¿Ô¤¾¯
-					//Èç¹û½ÇÉ«T1µÄÈı¸ö50%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+				ElseIf Form1.OptionBox46.Value = 1 Then//50%è¡€é‡é¢„è­¦
+					//å¦‚æœè§’è‰²T1çš„ä¸‰ä¸ª50%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor3 = "15100F" or GetColor3 = "140F0E" or GetColor3 = "171110" or GetColor3 = "161010" or GetColor4 = "15100F" or GetColor4 = "140F0E" or GetColor4 = "171110" or GetColor4 = "161010" or GetColor5 = "15100F" or GetColor5 = "140F0E" or GetColor5 = "171110" or GetColor5 = "161010" Then 
 						MsgBox "T1 50%"
 						T1 = 0
 					Else 
 						T1 = 1
 					End If
-					//Èç¹û½ÇÉ«T2µÄÈı¸ö50%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T2çš„ä¸‰ä¸ª50%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor9 = "15100F" or GetColor9 = "140F0E" or GetColor9 = "171110" or GetColor9 = "161010" or GetColor10 = "15100F" or GetColor10 = "140F0E" or GetColor10 = "171110" or GetColor10 = "161010" Then 
 						MsgBox "T2 50%"
 						T2 = 0
 					Else 
 						T2 = 1
 					End If
-					//Èç¹û½ÇÉ«T3µÄÈı¸ö50%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T3çš„ä¸‰ä¸ª50%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor13 = "15100F" or GetColor13 = "140F0E" or GetColor13 = "171110" or GetColor13 = "161010" or GetColor14 = "15100F" or GetColor14 = "140F0E" or GetColor14 = "171110" or GetColor14 = "161010" Then 
 						
 						T3 = 0
@@ -745,93 +745,93 @@ Rem Õ½¶·
 					End If
 				End If
 				
-//				XYf7 = Plugin.Bkgnd.FindColorEx(HD1, 1652, 263, 1663, 294, "B8B468", 0, 0.8)//ÓĞÃ»ÓĞÇàÉ« ÔÚµçÄÔ±êÊ¶ ÅĞ¶ÏÕ½¶·ÊÇ·ñÔÚ³ÖĞø
+//				XYf7 = Plugin.Bkgnd.FindColorEx(HD1, 1652, 263, 1663, 294, "B8B468", 0, 0.8)//æœ‰æ²¡æœ‰é’è‰² åœ¨ç”µè„‘æ ‡è¯† åˆ¤æ–­æˆ˜æ–—æ˜¯å¦åœ¨æŒç»­
 //				ZBf7 = InStr(XYf7, "|")
 //				Xf7 = Clng(Left(XYf7, ZBf7 - 1)): Yf7 = Clng(Right(XYf7, Len(XYf7) - ZBf7))
 //				
-//				XYf8 = Plugin.Bkgnd.FindColorEx(HD1, 1737, 1083, 1769, 1101, "7C6ABE", 0, 0.97)//ÓĞÃ»ÓĞÕ½¶· ÅĞ¶ÏÕ½¶·ÊÇ·ñÔÚ³ÖĞø
+//				XYf8 = Plugin.Bkgnd.FindColorEx(HD1, 1737, 1083, 1769, 1101, "7C6ABE", 0, 0.97)//æœ‰æ²¡æœ‰æˆ˜æ–— åˆ¤æ–­æˆ˜æ–—æ˜¯å¦åœ¨æŒç»­
 //				ZBf8 = InStr(XYf8, "|")
 //				Xf8 = Clng(Left(XYf8, ZBf8 - 1)): Yf8 = Clng(Right(XYf8, Len(XYf8) - ZBf8))
 				
 				//TracePrint "Xf7:" & Xf7 & " ;Yf7: " & Yf7
 				//TracePrint "Xf8:"&Xf8 &" ;Yf8: "&Yf8
 				Xf7 = 1
-				//ÅĞ¶ÏÕ½¶·ÊÇ·ñ³ÖĞø
-				If Xf7 <> - 1  Then //ÔÚ³ÖĞø
-					TracePrint "³ÖĞø×÷Õ½"
+				//åˆ¤æ–­æˆ˜æ–—æ˜¯å¦æŒç»­
+				If Xf7 <> - 1  Then //åœ¨æŒç»­
+					TracePrint "æŒç»­ä½œæˆ˜"
 					TracePrint "T1: "&T1&" ; T2:"&T2&"  ; T3: "&T3
 					If T1 = 0 Then 
 						If T2 = 0 Then 
-							//1Î£ 2Î£ ºÍ2»»
+							//1å± 2å± å’Œ2æ¢
 							MsgBox "c with 2"
-							Situation = 2//ÇĞ»»¼ì²â×´Ì¬
-							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//ÇĞ»»µÚ¶ş½ÇÉ«
+							Situation = 2//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//åˆ‡æ¢ç¬¬äºŒè§’è‰²
 							Delay 500
 							
-							//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+							//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 							
 							T2=1
 						Else
-							If T3 = 0 Then //1Î£ 2»î 3Î£ ºÍ3»»
+							If T3 = 0 Then //1å± 2æ´» 3å± å’Œ3æ¢
 					    		MsgBox "c with 3"
-					    		Situation = 3//ÇĞ»»¼ì²â×´Ì¬
-								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//ÇĞ»»µÚÈı½ÇÉ«
+					    		Situation = 3//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//åˆ‡æ¢ç¬¬ä¸‰è§’è‰²
 								Delay 500
 								
-								//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+								//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 								
 								T3=1
-							Else //1Î£ 2»î 3»î ºÍ2»»
+							Else //1å± 2æ´» 3æ´» å’Œ2æ¢
 								MsgBox "c with 2"
-								Situation = 2//ÇĞ»»¼ì²â×´Ì¬
-								Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//ÇĞ»»µÚ¶ş½ÇÉ«
+								Situation = 2//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+								Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//åˆ‡æ¢ç¬¬äºŒè§’è‰²
 								Delay 500
 								
-								//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+								//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 								
 								T2=1
 							End If
 						End If
 					Else 
-					TracePrint "½øÈëT2 T3"
+					TracePrint "è¿›å…¥T2 T3"
 					
-						If T2 = 0 Then //1»î 2Î£ ºÍ2»»
+						If T2 = 0 Then //1æ´» 2å± å’Œ2æ¢
 							MsgBox "c with 2"
-							Situation = 2//ÇĞ»»¼ì²â×´Ì¬
-							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//ÇĞ»»µÚ¶ş½ÇÉ«
+							Situation = 2//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//åˆ‡æ¢ç¬¬äºŒè§’è‰²
 							Delay 500
 							
-							//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+							//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 							
 							T2=1
 						Else 
-							If T3 = 0 Then //1»î 2»î 3Î£ ºÍ3»»
+							If T3 = 0 Then //1æ´» 2æ´» 3å± å’Œ3æ¢
 								MsgBox "c with 3"
-								Situation = 3//ÇĞ»»¼ì²â×´Ì¬
-								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//ÇĞ»»µÚÈı½ÇÉ«
+								Situation = 3//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//åˆ‡æ¢ç¬¬ä¸‰è§’è‰²
 								Delay 500
 								
-								//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+								//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 								
 								T3=0
 							End If
@@ -844,11 +844,11 @@ Rem Õ½¶·
 				
 				
 				Delay 800
-				//ÑªÁ¿33%
+				//è¡€é‡33%
 				GetColor15 = Plugin.Bkgnd.GetPixelColor(HD1, 34, 322)
 				GetColor16 = Plugin.Bkgnd.GetPixelColor(HD1, 35, 322)
 				GetColor17 = Plugin.Bkgnd.GetPixelColor(HD1, 36, 322)
-				//ÑªÁ¿50%
+				//è¡€é‡50%
 				GetColor18 = Plugin.Bkgnd.GetPixelColor(HD1, 88, 354)
 				GetColor19 = Plugin.Bkgnd.GetPixelColor(HD1, 88, 355)
 				GetColor20 = Plugin.Bkgnd.GetPixelColor(HD1, 88, 356)
@@ -856,20 +856,20 @@ Rem Õ½¶·
 				TracePrint GetColor15 & " | " & GetColor16 & " | " & GetColor17
 				TracePrint GetColor18 & " | " & GetColor19 & " | " & GetColor20
 				TracePrint "- - - - - - - - - - - - - - - - - - -"
-				//ÑªÁ¿33%
+				//è¡€é‡33%
 				GetColor21 = Plugin.Bkgnd.GetPixelColor(HD1, 82, 481)
 				GetColor22 = Plugin.Bkgnd.GetPixelColor(HD1, 82, 482)
-				//ÑªÁ¿50%
+				//è¡€é‡50%
 				GetColor23 = Plugin.Bkgnd.GetPixelColor(HD1, 149, 520)
 				GetColor24 = Plugin.Bkgnd.GetPixelColor(HD1, 149, 521)
 				GetColor25 = Plugin.Bkgnd.GetPixelColor(HD1, 149, 522)
 				TracePrint GetColor21 & " | " & GetColor22 
 				TracePrint GetColor23 & " | " & GetColor24 & " | " & GetColor25
 				TracePrint "- - - - - - - - - - - - - - - - - - -"
-				//ÑªÁ¿33%
+				//è¡€é‡33%
 				GetColor26 = Plugin.Bkgnd.GetPixelColor(HD1, 30, 624)
 				GetColor27 = Plugin.Bkgnd.GetPixelColor(HD1, 31, 624)
-				//ÑªÁ¿50%
+				//è¡€é‡50%
 				GetColor28 = Plugin.Bkgnd.GetPixelColor(HD1, 83, 655)
 				GetColor29 = Plugin.Bkgnd.GetPixelColor(HD1, 84, 655)
 				
@@ -879,44 +879,44 @@ Rem Õ½¶·
 				TracePrint "===================================="
 				
 				
-				If Form1.OptionBox47.Value = 1 Then //33%ÑªÁ¿Ô¤¾¯
-					//Èç¹û½ÇÉ«T1µÄÈı¸ö33%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+				If Form1.OptionBox47.Value = 1 Then //33%è¡€é‡é¢„è­¦
+					//å¦‚æœè§’è‰²T1çš„ä¸‰ä¸ª33%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor15 = "15100F" or GetColor15 = "140F0E" or GetColor15 = "171110" or GetColor15 = "161010" or GetColor16 = "15100F" or GetColor16 = "140F0E" or GetColor16 = "171110" or GetColor16 = "161010" or GetColor17 = "15100F" or GetColor17 = "140F0E" or GetColor17 = "171110" or GetColor17 = "161010" Then 
 						//MsgBox "T1 33%"
 						T1 = 0
 					Else 
 						T1 = 1
 					End If
-					//Èç¹û½ÇÉ«T2µÄÈı¸ö33%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T2çš„ä¸‰ä¸ª33%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor21 = "15100F" or GetColor21 = "140F0E" or GetColor21 = "171110" or GetColor21 = "161010" or GetColor22 = "15100F" or GetColor22 = "140F0E" or GetColor22 = "171110" or GetColor22 = "161010" Then 
 						//MsgBox "T2 33%"
 						T2 = 0
 					Else 
 						T2 = 1
 					End If
-					//Èç¹û½ÇÉ«T3µÄÈı¸ö33%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T3çš„ä¸‰ä¸ª33%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor26 = "15100F" or GetColor26 = "140F0E" or GetColor26 = "171110" or GetColor26 = "161010" or GetColor27 = "15100F" or GetColor27 = "140F0E" or GetColor27 = "171110" or GetColor27 = "161010" Then 
 						//MsgBox "T3 33%"
 						T3 = 0
 					Else 
 						T3 = 1
 					End If
-				ElseIf Form1.OptionBox46.Value = 1 Then//50%ÑªÁ¿Ô¤¾¯
-					//Èç¹û½ÇÉ«T1µÄÈı¸ö50%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+				ElseIf Form1.OptionBox46.Value = 1 Then//50%è¡€é‡é¢„è­¦
+					//å¦‚æœè§’è‰²T1çš„ä¸‰ä¸ª50%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor18 = "15100F" or GetColor18 = "140F0E" or GetColor18 = "171110" or GetColor18 = "161010" or GetColor19 = "15100F" or GetColor19 = "140F0E" or GetColor19 = "171110" or GetColor19 = "161010" or GetColor20 = "15100F" or GetColor20 = "140F0E" or GetColor20 = "171110" or GetColor20 = "161010" Then 
 						//MsgBox "T1 50%"
 						T1 = 0
 					Else 
 						T1 = 1
 					End If
-					//Èç¹û½ÇÉ«T2µÄÈı¸ö50%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T2çš„ä¸‰ä¸ª50%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor23 = "15100F" or GetColor23 = "140F0E" or GetColor23 = "171110" or GetColor23 = "161010" or GetColor24 = "15100F" or GetColor24 = "140F0E" or GetColor24 = "171110" or GetColor24 = "161010" or GetColor25 = "15100F" or GetColor25 = "140F0E" or GetColor25 = "171110" or GetColor25 = "161010"  Then 
 						//MsgBox "T2 50%"
 						T2 = 0
 					Else 
 						T2 = 1
 					End If
-					//Èç¹û½ÇÉ«T3µÄÈı¸ö50%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T3çš„ä¸‰ä¸ª50%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor28 = "15100F" or GetColor28 = "140F0E" or GetColor28 = "171110" or GetColor28 = "161010" or GetColor29 = "15100F" or GetColor29 = "140F0E" or GetColor29 = "171110" or GetColor29 = "161010" Then 
 						//MsgBox "T3 50%"
 						T3 = 0
@@ -925,91 +925,91 @@ Rem Õ½¶·
 					End If
 				End If
 				
-//				XYf9 = Plugin.Bkgnd.FindColorEx(HD1, 1652, 263, 1663, 294, "B8B468", 0, 0.8)//ÓĞÃ»ÓĞÇàÉ« ÔÚµçÄÔ±êÊ¶ ÅĞ¶ÏÕ½¶·ÊÇ·ñÔÚ³ÖĞø
+//				XYf9 = Plugin.Bkgnd.FindColorEx(HD1, 1652, 263, 1663, 294, "B8B468", 0, 0.8)//æœ‰æ²¡æœ‰é’è‰² åœ¨ç”µè„‘æ ‡è¯† åˆ¤æ–­æˆ˜æ–—æ˜¯å¦åœ¨æŒç»­
 //				ZBf9 = InStr(XYf9, "|")
 //				Xf9 = Clng(Left(XYf9, ZBf9 - 1)): Yf9 = Clng(Right(XYf9, Len(XYf9) - ZBf9))
 //				
-//				XYf10 = Plugin.Bkgnd.FindColorEx(HD1, 1737, 1083, 1769, 1101, "7C6ABE", 0, 0.97)//ÓĞÃ»ÓĞÕ½¶· ÅĞ¶ÏÕ½¶·ÊÇ·ñÔÚ³ÖĞø
+//				XYf10 = Plugin.Bkgnd.FindColorEx(HD1, 1737, 1083, 1769, 1101, "7C6ABE", 0, 0.97)//æœ‰æ²¡æœ‰æˆ˜æ–— åˆ¤æ–­æˆ˜æ–—æ˜¯å¦åœ¨æŒç»­
 //				ZBf10 = InStr(XYf10, "|")
 //				Xf10 = Clng(Left(XYf10, ZBf10 - 1)): Yf10 = Clng(Right(XYf10, Len(XYf10) - ZBf10))
 //				
 				Xf9 = 1
-				//ÅĞ¶ÏÕ½¶·ÊÇ·ñ³ÖĞø
-				If Xf9 <> - 1  Then //ÔÚ³ÖĞø
-					TracePrint "³ÖĞø×÷Õ½"
+				//åˆ¤æ–­æˆ˜æ–—æ˜¯å¦æŒç»­
+				If Xf9 <> - 1  Then //åœ¨æŒç»­
+					TracePrint "æŒç»­ä½œæˆ˜"
 					TracePrint "T1: "&T1&" ; T2:"&T2&"  ; T3: "&T3
 					If T1 = 0 Then 
 						If T2 = 0 Then 
-							//1Î£ 2Î£ ºÍ2»»
+							//1å± 2å± å’Œ2æ¢
 							MsgBox "c with 2"
-							Situation = 2//ÇĞ»»¼ì²â×´Ì¬
-							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//ÇĞ»»µÚ¶ş½ÇÉ«
+							Situation = 2//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//åˆ‡æ¢ç¬¬äºŒè§’è‰²
 							Delay 500
 							
-							//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+							//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 							
 							T2=1
 						Else
-							If T3 = 0 Then //1Î£ 2»î 3Î£ ºÍ3»»
+							If T3 = 0 Then //1å± 2æ´» 3å± å’Œ3æ¢
 					    		MsgBox "c with 3"
-					    		Situation = 3//ÇĞ»»¼ì²â×´Ì¬
-								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//ÇĞ»»µÚÈı½ÇÉ«
+					    		Situation = 3//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//åˆ‡æ¢ç¬¬ä¸‰è§’è‰²
 								Delay 500
 								
-								//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+								//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 								
 								T3=1
-							Else //1Î£ 2»î 3»î ºÍ2»»
+							Else //1å± 2æ´» 3æ´» å’Œ2æ¢
 								MsgBox "c with 2"
-								Situation = 2//ÇĞ»»¼ì²â×´Ì¬
-								Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//ÇĞ»»µÚ¶ş½ÇÉ«
+								Situation = 2//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+								Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//åˆ‡æ¢ç¬¬äºŒè§’è‰²
 								Delay 500
 								
-								//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+								//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 								
 								T2=1
 							End If
 						End If
 					Else 
-					TracePrint "½øÈëT2 T3"
+					TracePrint "è¿›å…¥T2 T3"
 					
-						If T2 = 0 Then //1»î 2Î£ ºÍ2»»
+						If T2 = 0 Then //1æ´» 2å± å’Œ2æ¢
 							MsgBox "c with 2"
-							Situation = 2//ÇĞ»»¼ì²â×´Ì¬
-							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//ÇĞ»»µÚ¶ş½ÇÉ«
+							Situation = 2//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//åˆ‡æ¢ç¬¬äºŒè§’è‰²
 							Delay 500
 							
-							//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+							//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 							
 							T2=1
 						Else 
-							If T3 = 0 Then //1»î 2»î 3Î£ ºÍ3»»
+							If T3 = 0 Then //1æ´» 2æ´» 3å± å’Œ3æ¢
 								MsgBox "c with 3"
-								Situation = 3//ÇĞ»»¼ì²â×´Ì¬
-								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//ÇĞ»»µÚÈı½ÇÉ«
+								Situation = 3//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//åˆ‡æ¢ç¬¬ä¸‰è§’è‰²
 								Delay 500
 								
-								//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+								//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 								
 								T3=0
 							End If
@@ -1022,11 +1022,11 @@ Rem Õ½¶·
 				
 				
 				Delay 800
-				//ÑªÁ¿33%
+				//è¡€é‡33%
 				GetColor30 = Plugin.Bkgnd.GetPixelColor(HD1, 34, 322)
 				GetColor31 = Plugin.Bkgnd.GetPixelColor(HD1, 35, 322)
 				GetColor32 = Plugin.Bkgnd.GetPixelColor(HD1, 36, 322)
-				//ÑªÁ¿50%
+				//è¡€é‡50%
 				GetColor33 = Plugin.Bkgnd.GetPixelColor(HD1, 88, 354)
 				GetColor34 = Plugin.Bkgnd.GetPixelColor(HD1, 88, 355)
 				GetColor35 = Plugin.Bkgnd.GetPixelColor(HD1, 88, 356)
@@ -1034,21 +1034,21 @@ Rem Õ½¶·
 				TracePrint GetColor30 & " | " & GetColor31 & " | " & GetColor32
 				TracePrint GetColor33 & " | " & GetColor34 & " | " & GetColor35
 				TracePrint "- - - - - - - - - - - - - - - - - - -"
-				//ÑªÁ¿33%
+				//è¡€é‡33%
 				GetColor36 = Plugin.Bkgnd.GetPixelColor(HD1, 95, 474)
 				GetColor37 = Plugin.Bkgnd.GetPixelColor(HD1, 96, 474)
 				GetColor38 = Plugin.Bkgnd.GetPixelColor(HD1, 97, 474)
-				//ÑªÁ¿50%
+				//è¡€é‡50%
 				GetColor39 = Plugin.Bkgnd.GetPixelColor(HD1, 149, 505)
 				GetColor40 = Plugin.Bkgnd.GetPixelColor(HD1, 149, 506)
 				TracePrint GetColor36 & " | " & GetColor37 & " | " & GetColor38
 				TracePrint GetColor39 & " | " & GetColor40
 				TracePrint "- - - - - - - - - - - - - - - - - - -"
-				//ÑªÁ¿33%
+				//è¡€é‡33%
 				GetColor41 = Plugin.Bkgnd.GetPixelColor(HD1, 16, 631)
 				GetColor42 = Plugin.Bkgnd.GetPixelColor(HD1, 17, 631)
 				GetColor43 = Plugin.Bkgnd.GetPixelColor(HD1, 18, 631)
-				//ÑªÁ¿50%
+				//è¡€é‡50%
 				GetColor44 = Plugin.Bkgnd.GetPixelColor(HD1, 225, 659)
 				GetColor45 = Plugin.Bkgnd.GetPixelColor(HD1, 255, 660)
 				GetColor46 = Plugin.Bkgnd.GetPixelColor(HD1, 255, 661)
@@ -1059,44 +1059,44 @@ Rem Õ½¶·
 				TracePrint "===================================="
 				
 				
-				If Form1.OptionBox47.Value = 1 Then //33%ÑªÁ¿Ô¤¾¯
-					//Èç¹û½ÇÉ«T1µÄÈı¸ö33%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+				If Form1.OptionBox47.Value = 1 Then //33%è¡€é‡é¢„è­¦
+					//å¦‚æœè§’è‰²T1çš„ä¸‰ä¸ª33%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor30 = "15100F" or GetColor30 = "140F0E" or GetColor30 = "171110" or GetColor30 = "161010" or GetColor31 = "15100F" or GetColor31 = "140F0E" or GetColor31 = "171110" or GetColor31 = "161010" or GetColor32 = "15100F" or GetColor32 = "140F0E" or GetColor32 = "171110" or GetColor32 = "161010" Then 
 						//MsgBox "T1 33%"
 						T1 = 0
 					Else 
 						T1 = 1
 					End If
-					//Èç¹û½ÇÉ«T2µÄÈı¸ö33%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T2çš„ä¸‰ä¸ª33%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor36 = "15100F" or GetColor36 = "140F0E" or GetColor36 = "171110" or GetColor36 = "161010" or GetColor37 = "15100F" or GetColor37 = "140F0E" or GetColor37 = "171110" or GetColor37 = "161010" or GetColor38 = "15100F" or GetColor38 = "140F0E" or GetColor38 = "171110" or GetColor38 = "161010" Then 
 						//MsgBox "T2 33%"
 						T2 = 0
 					Else 
 						T2 = 1
 					End If
-					//Èç¹û½ÇÉ«T3µÄÈı¸ö33%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T3çš„ä¸‰ä¸ª33%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor41 = "15100F" or GetColor41 = "140F0E" or GetColor41 = "171110" or GetColor41 = "161010" or GetColor42 = "15100F" or GetColor42 = "140F0E" or GetColor42 = "171110" or GetColor42 = "161010" or GetColor43 = "15100F" or GetColor43 = "140F0E" or GetColor43 = "171110" or GetColor43 = "161010" Then 
 						//MsgBox "T3 33%"
 						T3 = 0
 					Else 
 						T3 = 1
 					End If
-				ElseIf Form1.OptionBox46.Value = 1 Then//50%ÑªÁ¿Ô¤¾¯
-					//Èç¹û½ÇÉ«T1µÄÈı¸ö50%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+				ElseIf Form1.OptionBox46.Value = 1 Then//50%è¡€é‡é¢„è­¦
+					//å¦‚æœè§’è‰²T1çš„ä¸‰ä¸ª50%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor33 = "15100F" or GetColor33 = "140F0E" or GetColor33 = "171110" or GetColor33 = "161010" or GetColor34 = "15100F" or GetColor34 = "140F0E" or GetColor34 = "171110" or GetColor34 = "161010" or GetColor35 = "15100F" or GetColor35 = "140F0E" or GetColor35 = "171110" or GetColor35 = "161010" Then 
 						//MsgBox "T1 50%"
 						T1 = 0
 					Else 
 						T1 = 1
 					End If
-					//Èç¹û½ÇÉ«T2µÄÈı¸ö50%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T2çš„ä¸‰ä¸ª50%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor39 = "15100F" or GetColor39 = "140F0E" or GetColor39 = "171110" or GetColor39 = "161010" or GetColor40 = "15100F" or GetColor40 = "140F0E" or GetColor40 = "171110" or GetColor40 = "161010" Then 
 						//MsgBox "T2 50%"
 						T2 = 0
 					Else 
 						T2 = 1
 					End If
-					//Èç¹û½ÇÉ«T3µÄÈı¸ö50%¼à²âµãÓĞÈÎÒâÒ»¸ö³öÏÖÁËºÚÉ«Ïà¹ØÉ«¾ÍÔ¤¾¯
+					//å¦‚æœè§’è‰²T3çš„ä¸‰ä¸ª50%ç›‘æµ‹ç‚¹æœ‰ä»»æ„ä¸€ä¸ªå‡ºç°äº†é»‘è‰²ç›¸å…³è‰²å°±é¢„è­¦
 					If GetColor44 = "15100F" or GetColor44 = "140F0E" or GetColor44 = "171110" or GetColor44 = "161010" or GetColor45 = "15100F" or GetColor45 = "140F0E" or GetColor45 = "171110" or GetColor45 = "161010" or GetColor46 = "15100F" or GetColor46 = "140F0E" or GetColor46 = "171110" or GetColor46 = "161010" Then 
 						//MsgBox "T3 50%"
 						T3 = 0
@@ -1105,90 +1105,90 @@ Rem Õ½¶·
 					End If
 				End If
 				
-//				XYf11 = Plugin.Bkgnd.FindColorEx(HD1, 1652, 263, 1663, 294, "B8B468", 0, 0.8)//ÓĞÃ»ÓĞÇàÉ« ÔÚµçÄÔ±êÊ¶ ÅĞ¶ÏÕ½¶·ÊÇ·ñÔÚ³ÖĞø
+//				XYf11 = Plugin.Bkgnd.FindColorEx(HD1, 1652, 263, 1663, 294, "B8B468", 0, 0.8)//æœ‰æ²¡æœ‰é’è‰² åœ¨ç”µè„‘æ ‡è¯† åˆ¤æ–­æˆ˜æ–—æ˜¯å¦åœ¨æŒç»­
 //				ZBf11 = InStr(XYf11, "|")
 //				Xf11 = Clng(Left(XYf11, ZBf11 - 1)): Yf11 = Clng(Right(XYf11, Len(XYf11) - ZBf11))
 //				
-//				XYf12 = Plugin.Bkgnd.FindColorEx(HD1, 1737, 1083, 1769, 1101, "7C6ABE", 0, 0.97)//ÓĞÃ»ÓĞÕ½¶· ÅĞ¶ÏÕ½¶·ÊÇ·ñÔÚ³ÖĞø
+//				XYf12 = Plugin.Bkgnd.FindColorEx(HD1, 1737, 1083, 1769, 1101, "7C6ABE", 0, 0.97)//æœ‰æ²¡æœ‰æˆ˜æ–— åˆ¤æ–­æˆ˜æ–—æ˜¯å¦åœ¨æŒç»­
 //				ZBf12 = InStr(XYf12, "|")
 //				Xf12 = Clng(Left(XYf12, ZBf12 - 1)): Yf12 = Clng(Right(XYf12, Len(XYf12) - ZBf12))
 				Xf11 = 1
-				//ÅĞ¶ÏÕ½¶·ÊÇ·ñ³ÖĞø
-				If Xf11 <> - 1  Then //ÔÚ³ÖĞø
-					TracePrint "³ÖĞø×÷Õ½"
+				//åˆ¤æ–­æˆ˜æ–—æ˜¯å¦æŒç»­
+				If Xf11 <> - 1  Then //åœ¨æŒç»­
+					TracePrint "æŒç»­ä½œæˆ˜"
 					TracePrint "T1: "&T1&" ; T2:"&T2&"  ; T3: "&T3
 					If T1 = 0 Then 
 						If T2 = 0 Then 
-							//1Î£ 2Î£ ºÍ2»»
+							//1å± 2å± å’Œ2æ¢
 							MsgBox "c with 2"
-							Situation = 2//ÇĞ»»¼ì²â×´Ì¬
-							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//ÇĞ»»µÚ¶ş½ÇÉ«
+							Situation = 2//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//åˆ‡æ¢ç¬¬äºŒè§’è‰²
 							Delay 500
 							
-							//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+							//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 							
 							T2=1
 						Else
-							If T3 = 0 Then //1Î£ 2»î 3Î£ ºÍ3»»
+							If T3 = 0 Then //1å± 2æ´» 3å± å’Œ3æ¢
 					    		MsgBox "c with 3"
-					    		Situation = 3//ÇĞ»»¼ì²â×´Ì¬
-								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//ÇĞ»»µÚÈı½ÇÉ«
+					    		Situation = 3//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//åˆ‡æ¢ç¬¬ä¸‰è§’è‰²
 								Delay 500
 								
-								//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+								//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 								
 								T3=1
-							Else //1Î£ 2»î 3»î ºÍ2»»
+							Else //1å± 2æ´» 3æ´» å’Œ2æ¢
 								MsgBox "c with 2"
-								Situation = 2//ÇĞ»»¼ì²â×´Ì¬
-								Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//ÇĞ»»µÚ¶ş½ÇÉ«
+								Situation = 2//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+								Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//åˆ‡æ¢ç¬¬äºŒè§’è‰²
 								Delay 500
 								
-								//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+								//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 								
 								T2=1
 							End If
 						End If
 					Else 
-					TracePrint "½øÈëT2 T3"
+					TracePrint "è¿›å…¥T2 T3"
 					
-						If T2 = 0 Then //1»î 2Î£ ºÍ2»»
+						If T2 = 0 Then //1æ´» 2å± å’Œ2æ¢
 							MsgBox "c with 2"
-							Situation = 2//ÇĞ»»¼ì²â×´Ì¬
-							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//ÇĞ»»µÚ¶ş½ÇÉ«
+							Situation = 2//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+							Call Plugin.Bkgnd.LeftClick(HD2, 151, 240)//åˆ‡æ¢ç¬¬äºŒè§’è‰²
 							Delay 500
 							
-							//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+							//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 							Delay 200
-							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+							Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 							
 							T2=1
 						Else 
-							If T3 = 0 Then //1»î 2»î 3Î£ ºÍ3»»
+							If T3 = 0 Then //1æ´» 2æ´» 3å± å’Œ3æ¢
 								MsgBox "c with 3"
-								Situation = 3//ÇĞ»»¼ì²â×´Ì¬
-								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//ÇĞ»»µÚÈı½ÇÉ«
+								Situation = 3//åˆ‡æ¢æ£€æµ‹çŠ¶æ€
+								Call Plugin.Bkgnd.LeftClick(HD2, 82, 388)//åˆ‡æ¢ç¬¬ä¸‰è§’è‰²
 								Delay 500
 								
-								//ÇĞ»»½ÇÉ«Á¢¿Ì¿ª´ó
+								//åˆ‡æ¢è§’è‰²ç«‹åˆ»å¼€å¤§
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//µã»÷µÚ¶ş½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1195, 970)//ç‚¹å‡»ç¬¬äºŒè§’è‰²å¤§æ‹›
 								Delay 200
-								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//µã»÷µÚÈı½ÇÉ«´óÕĞ
+								Call Plugin.Bkgnd.LeftClick(HD2, 1360, 966)//ç‚¹å‡»ç¬¬ä¸‰è§’è‰²å¤§æ‹›
 								
 								T3=0
 							End If
@@ -1199,32 +1199,32 @@ Rem Õ½¶·
 		
 		
 		
-		XYf5f = Plugin.Bkgnd.FindPic(HD1, 974, 696, 1390, 823, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Éñ.bmp", 0, 0.7)//Õ½¶·Ê§°Ü ÏÂÃæµÄÊµÁ¦²»×ãºì×Ö
+		XYf5f = Plugin.Bkgnd.FindPic(HD1, 974, 696, 1390, 823, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\ç¥.bmp", 0, 0.7)//æˆ˜æ–—å¤±è´¥ ä¸‹é¢çš„å®åŠ›ä¸è¶³çº¢å­—
 		iZBf5f = InStr(XYf5f, "|")
 		Xf5f = CLng(Left(XYf5f, iZBf5f - 1))
 		Yf5f = CLng(Right(XYf5f, Len(XYf5f) - iZBf5f))
 		
-		XYf6f = Plugin.Bkgnd.FindPic(HD1, 812, 1103, 1136, 1209, "D:\¹¤³Ì\ÏîÄ¿Í¼Æ¬\7d\Ê±¿ÕÃÔÎí-Õ½¶·Ê¤Àû.bmp", 0, 0.7)//Õ½¶·Ê¤Àû
+		XYf6f = Plugin.Bkgnd.FindPic(HD1, 812, 1103, 1136, 1209, "D:\å·¥ç¨‹\é¡¹ç›®å›¾ç‰‡\7d\æ—¶ç©ºè¿·é›¾-æˆ˜æ–—èƒœåˆ©.bmp", 0, 0.7)//æˆ˜æ–—èƒœåˆ©
 		iZBf6f = InStr(XYf6f, "|")
 		Xf6f = CLng(Left(XYf6f, iZBf6f - 1))
 		Yf6f = CLng(Right(XYf6f, Len(XYf6f) - iZBf6f))
 		
 		TracePrint Xf6f &" | "& Yf6f
 		
-	Loop Until Xf5f <> - 1  or Xf6f <> - 1 //Ö±µ½³É¹¦»òÊ§°Ü
+	Loop Until Xf5f <> - 1  or Xf6f <> - 1 //ç›´åˆ°æˆåŠŸæˆ–å¤±è´¥
 	
 	//MsgBox "PASS"
 	
 	Rem Exinner
 	Delay 2000
-	If Xf5f <> - 1  Then //Èç¹ûÊ§°Ü
+	If Xf5f <> - 1  Then //å¦‚æœå¤±è´¥
 		//MsgBox "Failed"
-		//Call Plugin.Bkgnd.LeftClick(HD2, 906, 1022)//µã»÷Õ½¶·Ê§°Ü¼ÌĞø
-		Ê±¿ÕÃÔÎíÕ½¶· = -1
+		//Call Plugin.Bkgnd.LeftClick(HD2, 906, 1022)//ç‚¹å‡»æˆ˜æ–—å¤±è´¥ç»§ç»­
+		æ—¶ç©ºè¿·é›¾æˆ˜æ–— = -1
 	End If
-	If Xf6f <> - 1  Then //Èç¹û³É¹¦ 
+	If Xf6f <> - 1  Then //å¦‚æœæˆåŠŸ 
 		//MsgBox "Succeed"
-		Ê±¿ÕÃÔÎíÕ½¶· = 1
+		æ—¶ç©ºè¿·é›¾æˆ˜æ–— = 1
 	End If
 
 End Function
